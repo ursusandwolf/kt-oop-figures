@@ -1,6 +1,7 @@
 package mate.academy.model
 
-enum class FigureKind {
+enum class FigureType {
     CIRCLE,
+    RECTANGLE,
     SQUARE
 }
