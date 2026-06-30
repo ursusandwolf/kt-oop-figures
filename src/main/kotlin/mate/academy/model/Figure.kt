@@ -6,10 +6,10 @@ abstract class Figure(color: Color) {
         get() = this::class.simpleName?.lowercase() ?: "figure"
 
     abstract fun area(): Double
-    open fun draw() = println(
-        "Figure: $name, area: ${area()}, ${specificInfo()}, color: $color"
-    )
-    /** each subclass implements this to describe its own fields */
-    protected abstract fun specificInfo(): String
 
+    open fun draw() = println(
+        "Figure: $name, area: ${area()} sq. units, ${specificInfo()}, color: ${color.name.lowercase()}"
+    )
+
+    protected abstract fun specificInfo(): String
 }

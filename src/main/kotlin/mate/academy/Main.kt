@@ -5,10 +5,13 @@ import mate.academy.model.Figure
 
 fun main() {
     val supplier = FigureSupplier()
-    // create a list with 4 figures: 2 random, 2 default
-    val figures = mutableListOf<Figure>()
-    repeat(2) { figures.add(supplier.getRandomFigure()) }
-    repeat(2) { figures.add(supplier.getDefaultFigure()) }
-    // draw all figures
+
+    val figures: Array<Figure> = arrayOf(
+        supplier.getRandomFigure(),
+        supplier.getRandomFigure(),
+        supplier.getDefaultFigure(),
+        supplier.getDefaultFigure()
+    )
+
     figures.forEach { it.draw() }
 }
