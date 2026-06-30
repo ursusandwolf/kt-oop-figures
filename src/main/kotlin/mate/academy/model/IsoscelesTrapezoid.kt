@@ -4,7 +4,7 @@ class IsoscelesTrapezoid(
     val topBase: Double,
     val bottomBase: Double,
     val height: Double,
-    override val color: Color
+    color: Color
 ) : Figure(color) {
     override val name: String = "isosceles trapezoid"
 

@@ -3,7 +3,7 @@ package mate.academy.model
 class RightTriangle(
     val firstLeg: Double,
     val secondLeg: Double,
-    override val color: Color
+    color: Color
 ) : Figure(color) {
     override val name: String = "right triangle"
 

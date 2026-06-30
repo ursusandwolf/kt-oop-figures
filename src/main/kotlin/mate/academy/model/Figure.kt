@@ -1,7 +1,6 @@
 package mate.academy.model
 
-abstract class Figure(color: Color) {
-    open val color: Color = color
+abstract class Figure(val color: Color) {
     open val name: String
         get() = this::class.simpleName?.lowercase() ?: "figure"
 
